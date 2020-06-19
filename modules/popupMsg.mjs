@@ -16,7 +16,7 @@ const popupMsg = (message) =>{
   popupLightbox.append(popupContainer)
   document.body.append(popupLightbox)
 
-  setTimeout(function(){ document.body.removeChild(popupLightbox); }, 2000);
+  setTimeout(function(){ document.body.removeChild(popupLightbox); }, 1500);
 
 
 }
