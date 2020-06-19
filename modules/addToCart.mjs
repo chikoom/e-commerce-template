@@ -1,4 +1,5 @@
 import popupMsg from './popupMsg.mjs'
+import {updateNavCart} from './navbar.mjs'
 
 const addToCart = (product, cart) =>{
 
@@ -7,6 +8,7 @@ const addToCart = (product, cart) =>{
   addToCartBtn.onclick = () => {
     cart.push(product)
     popupMsg(`${product.name}<br/>Added To Cart!`)
+    updateNavCart(cart)
   };
   addToCartBtn.innerHTML = 'Add To Cart'
 
