@@ -9,6 +9,6 @@ import products from '../data/products.mjs'
 
 renderNav(cart)
 
-document.getElementById('lnkAbout').addEventListener('click', () => renderAboutPage)
+document.getElementById('lnkAbout').addEventListener('click', renderAboutPage)
 document.getElementById('lnkProducts').addEventListener('click', () => renderProductsPage(products, cart))
 document.getElementById('lnkCart').addEventListener('click', () => renderCartPage(cart))

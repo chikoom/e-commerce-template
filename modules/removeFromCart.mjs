@@ -16,6 +16,7 @@ const removeFromCart = (productId, cart) =>{
 
     for(let productIndex in cart){
       if(cart[productIndex].id === productId){
+        popupMsg(`${cart[productIndex].name}<br/>Removed From Cart!`)
         if(cart[productIndex].amount === 1){
           cart.splice(productIndex,1)
         }
@@ -23,8 +24,9 @@ const removeFromCart = (productId, cart) =>{
           cart[productIndex].amount -= 1
         }
       }
+      
     }
-
+    
     renderCartPage(cart)
 
     //popupMsg(`${product.name}<br/>Added To Cart!`)
