@@ -11,5 +11,5 @@ import products from '../data/products.mjs'
 renderNav()
 
 document.getElementById('lnkAbout').addEventListener('click', renderAboutPage)
-document.getElementById('lnkProducts').addEventListener('click', renderProductsPage)
+document.getElementById('lnkProducts').addEventListener('click', () => renderProductsPage(products, cart))
 document.getElementById('lnkCart').addEventListener('click', () => renderCartPage(cart))
