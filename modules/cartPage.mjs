@@ -7,12 +7,7 @@ const renderCartPage = (cart) => {
   contentContainer.id='main';
   contentContainer.innerHTML = '';
   contentContainer.append(createPageHeader(texts.cartTitle))
-  
-
-  
-
   contentContainer.append(renderCart(cart))
-  
   root.append(contentContainer)
 }
 

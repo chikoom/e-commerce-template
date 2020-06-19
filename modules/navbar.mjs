@@ -41,8 +41,12 @@ const renderNav = (cart) => {
 }
 
 export const updateNavCart = (cart) => {
+  let proSum = 0
+  for(let product of cart){
+    proSum += product.amount
+  }
   const cartItem = document.getElementById('lnkCart')
-  cartItem.innerHTML = (cart.length > 0) ? `Cart <span id="navCartItems"> (${cart.length})</span>` : 'Cart'
+  cartItem.innerHTML = (proSum > 0) ? `Cart <span id="navCartItems"> (${proSum})</span>` : 'Cart'
 }
 
 
