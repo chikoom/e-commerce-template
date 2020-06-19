@@ -4,7 +4,7 @@ import {updateNavCart} from './navbar.mjs'
 const calculateTotalPrice = (productsList) => {
   let sum = 0
   for(let product of productsList){
-    sum += product.price
+    sum += product.price * product.amount
   }
   return sum
 }

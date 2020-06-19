@@ -1,3 +1,4 @@
+import renderPageHeader from '../modules/renderPageHeader.mjs'
 import renderNav from '../modules/navbar.mjs'
 import renderAboutPage from '../modules/aboutPage.mjs'
 import renderProductsPage from '../modules/productsPage.mjs'
@@ -6,7 +7,7 @@ import cart from '../data/cart.mjs'
 import products from '../data/products.mjs'
 
 
-
+renderPageHeader()
 renderNav(cart)
 
 document.getElementById('lnkAbout').addEventListener('click', renderAboutPage)

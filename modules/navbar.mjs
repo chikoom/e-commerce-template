@@ -1,13 +1,18 @@
 const navItems = [
   {
-    id:'lnkProducts',
+    id:'lnkHome',
     link: '#',
-    text: 'All Products'
+    text: 'Home'
   },
   {
     id:'lnkAbout',
     link: '#',
     text: 'About Us'
+  },
+  {
+    id:'lnkProducts',
+    link: '#',
+    text: 'All Products'
   },
   {
     id:'lnkCart',
