@@ -8,7 +8,7 @@ const renderPageHeader = () => {
 
   const companyName = document.createElement('h1')
   companyName.classList.add('company-name')
-  companyName.innerHTML = texts.companyName
+  companyName.innerHTML = texts.companyName.toUpperCase()
   
 
   const companySlogan = document.createElement('h2')

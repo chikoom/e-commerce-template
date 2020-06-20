@@ -5,7 +5,7 @@ const texts = {
   productsTitle: 'Our Products',
   cartTitle: 'Shopping Cart',
   companyName: 'Mind Cube',
-  companySlogan: 'Think Outside Of The Puzzle Box'
+  companySlogan: 'Think Outside The Puzzle Box'
 }
 
 export default texts
