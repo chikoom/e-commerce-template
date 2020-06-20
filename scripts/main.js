@@ -12,7 +12,29 @@ renderPageHeader()
 renderNav(cart)
 renderHomePage(products, cart)
 
-document.getElementById('lnkHome').addEventListener('click', () => renderHomePage(products, cart))
-document.getElementById('lnkAbout').addEventListener('click', renderAboutPage)
-document.getElementById('lnkProducts').addEventListener('click', () => renderProductsPage(products, cart))
-document.getElementById('lnkCart').addEventListener('click', () => renderCartPage(cart))
+
+const markNavBar = (id) => {
+  (document.getElementsByClassName('current')[0])&&
+  (document.getElementsByClassName('current')[0].classList.remove('current'))
+  document.getElementById(id).classList.add('current')
+}
+markNavBar('lnkHome')
+
+document.getElementById('lnkHome').addEventListener('click', () => {
+  markNavBar('lnkHome')
+  renderHomePage(products, cart)
+})
+document.getElementById('lnkAbout').addEventListener('click', () => { 
+  markNavBar('lnkAbout')
+  renderAboutPage()
+})
+
+document.getElementById('lnkProducts').addEventListener('click', () => {
+  markNavBar('lnkProducts')
+  renderProductsPage(products, cart)
+})
+
+document.getElementById('lnkCart').addEventListener('click', () => {
+  markNavBar('lnkCart')
+  renderCartPage(cart)
+})
