@@ -38,3 +38,14 @@ document.getElementById('lnkCart').addEventListener('click', () => {
   markNavBar('lnkCart')
   renderCartPage(cart)
 })
+
+const element = document.querySelector('.company-name-container');
+
+  element.addEventListener('mouseenter', () => {
+    element.classList.remove('animate__rotateIn');
+    element.classList.add('animate__animated', 'animate__tada');
+  })
+  
+  element.addEventListener('animationend', () => {
+    element.classList.remove('animate__animated', 'animate__tada');
+  });

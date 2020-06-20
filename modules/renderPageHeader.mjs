@@ -4,8 +4,8 @@ const renderPageHeader = () => {
   const root = document.getElementById('root')
 
   const companyNameContainer = document.createElement('div')
-  companyNameContainer.classList.add('company-name-container')
-
+  companyNameContainer.classList.add('company-name-container','animate__rotateIn','animate__animated')
+  
   const companyName = document.createElement('h1')
   companyName.classList.add('company-name')
   companyName.innerHTML = texts.companyName.toUpperCase()
