@@ -156,6 +156,11 @@ h1, h2, h3, h4, h5 {
   padding: 10px;
     margin: 1%  1%;
 }
+.single-product-container:hover{
+    -webkit-box-shadow:inset 0px 0px 0px 2px #888;
+    -moz-box-shadow:inset 0px 0px 0px 2px #888;
+    box-shadow:inset 0px 0px 0px 2px #888;
+}
 .single-product-header{
   text-align: center;
    padding-bottom: 15px;
@@ -166,21 +171,23 @@ h1, h2, h3, h4, h5 {
 }
 .single-product-price{
   position: absolute;
-  bottom: 0;
-  right:0;
+  bottom: 4px;
+  right:4px;
   background-color: #888;
   color:#fff;
   padding: 5px 10px;
+    border-radius: 3px;
 }
 
 .single-product-AddToCart{
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 4px;
+  left: 4px;
   background-color: #888;
   color: #fff;
   padding: 5px 10px;
   cursor: pointer;
+    border-radius: 3px;
 }
 .single-product-AddToCart:hover{
     background-color: #555;
