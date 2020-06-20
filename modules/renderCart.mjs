@@ -6,7 +6,7 @@ const calculateTotalPrice = (productsList) => {
   for(let product of productsList){
     sum += product.price * product.amount
   }
-  return sum
+  return (sum)?`Total Price: $${sum}`:'Cart is empty'
 }
 
 const updateCartIds = (cart) => {
@@ -59,7 +59,7 @@ const renderCart = (products) => {
 
   const totalPrice = document.createElement('div')
   totalPrice.classList.add('cart-total-price')
-  totalPrice.innerHTML= `Total Price: $${calculateTotalPrice(products)}`
+  totalPrice.innerHTML= calculateTotalPrice(products)
   productsContainer.append(totalPrice)
 
   updateNavCart(products)
